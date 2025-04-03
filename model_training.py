@@ -7,13 +7,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load dataset
-file_path = "dataset/branch_predictor_dataset_modified.csv"
-
+df = pd.read_csv("dataset/branch_predictor_dataset_modified.csv")
 if not os.path.exists(file_path):
     print(f"Error: File not found at {file_path}.")
     exit()
-
-df = pd.read_csv(file_path)
 
 # Encode categorical variables
 label_encoders = {}
