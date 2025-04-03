@@ -1,1 +1,5 @@
+import pickle
 
+pickle.dump(model, open('FileName', 'wb')) # To generate the pickle file
+
+pickle_model = pickle.load(open('FileName, 'rb')) # to load the pickle file
